@@ -10,7 +10,7 @@ let user = new Observable({
     password: "",
 });
 
-exports.loaded = function(args) {
+exports.loaded = function (args) {
     page = args.object;
     page.bindingContext = user;
 };
@@ -46,7 +46,7 @@ exports.checkLogin = () => {
 
 // };
 
-exports.gotoRegister = function() {
+exports.gotoRegister = function () {
     var topmost = frameModule.topmost();
     topmost.navigate("views/register/register");
 };
